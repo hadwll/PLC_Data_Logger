@@ -125,10 +125,10 @@
         "id": "56841c7613eaf1e3",
         "type": "MySQLdatabase",
         "name": "",
-        "host": "127.0.0.1",
+        "host": "localhost",
         "port": "3306",
-        "db": "training",
-        "tz": "",
+        "db": "tempvalues",
+        "tz": "UK",
         "charset": "UTF8"
     },
     {
@@ -366,7 +366,7 @@
         "topic": "",
         "payloadType": "date",
         "x": 390,
-        "y": 420,
+        "y": 400,
         "wires": [
             [
                 "af10a9e1c647fe92",
@@ -448,5 +448,17 @@
         "x": 970,
         "y": 480,
         "wires": []
+    },
+    {
+        "id": "7b587a95137913ca",
+        "type": "mysql",
+        "z": "63a94dd53b6ea35e",
+        "mydb": "56841c7613eaf1e3",
+        "name": "",
+        "x": 1090,
+        "y": 600,
+        "wires": [
+            []
+        ]
     }
 ]
