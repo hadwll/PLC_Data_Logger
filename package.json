@@ -1,0 +1,12 @@
+{
+    "name": "PLC_Data_Logger",
+    "description": "Flows for the collection and visulisation of data from PLCs",
+    "version": "0.0.1",
+    "dependencies": {},
+    "node-red": {
+        "settings": {
+            "flowFile": "flows.json",
+            "credentialsFile": "flows_cred.json"
+        }
+    }
+}
