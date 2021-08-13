@@ -7,7 +7,80 @@
         "info": ""
     },
     {
-        "id": "08ce221ee99a19db",
+        "id": "259d9210b7a2ebfd",
+        "type": "tab",
+        "label": "Flow 2",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "56841c7613eaf1e3",
+        "type": "MySQLdatabase",
+        "name": "",
+        "host": "localhost",
+        "port": "3306",
+        "db": "tempvalues",
+        "tz": "GB",
+        "charset": "UTF8"
+    },
+    {
+        "id": "d30d6219.8ceef",
+        "type": "MySQLdatabase",
+        "name": "",
+        "host": "127.0.0.1",
+        "port": "3306",
+        "db": "training",
+        "tz": "de"
+    },
+    {
+        "id": "2eaff49d.f2148c",
+        "type": "mqtt-broker",
+        "name": "",
+        "broker": "192.168.1.7",
+        "port": "1883",
+        "clientid": "Node-RED_Desktop",
+        "usetls": false,
+        "compatmode": false,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "birthTopic": "Desktop",
+        "birthQos": "2",
+        "birthRetain": "true",
+        "birthPayload": "Desktop_Connected",
+        "birthMsg": {},
+        "closeTopic": "Desktop",
+        "closeQos": "2",
+        "closeRetain": "true",
+        "closePayload": "Desktop_Disconnected",
+        "closeMsg": {},
+        "willTopic": "Desktop",
+        "willQos": "2",
+        "willRetain": "true",
+        "willPayload": "Desktop_Connection break",
+        "willMsg": {},
+        "sessionExpiry": ""
+    },
+    {
+        "id": "cb19c538.21d738",
+        "type": "MySQLdatabase",
+        "name": "",
+        "host": "127.0.0.1",
+        "port": "3306",
+        "db": "training",
+        "tz": "de",
+        "charset": "UTF8"
+    },
+    {
+        "id": "c8f85ef2893010bd",
+        "type": "OpcUa-Endpoint",
+        "endpoint": "opc.tcp://192.168.1.25:4840",
+        "secpol": "None",
+        "secmode": "None",
+        "login": false
+    },
+    {
+        "id": "3c9c052e1fc3575f",
         "type": "ui_tab",
         "name": "Home",
         "icon": "dashboard",
@@ -15,7 +88,86 @@
         "hidden": false
     },
     {
-        "id": "a017984f53f428ec",
+        "id": "78d7d42c237b1be0",
+        "type": "ui_group",
+        "name": "Data-Logging",
+        "tab": "3c9c052e1fc3575f",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "77b911eb0426b28f",
+        "type": "ui_group",
+        "name": "Current Value",
+        "tab": "3c9c052e1fc3575f",
+        "order": 2,
+        "disp": true,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "b451fce2cdc5bf46",
+        "type": "ui_group",
+        "name": "Store information",
+        "tab": "",
+        "order": 2,
+        "disp": true,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "863780a67d3ee73c",
+        "type": "ui_group",
+        "name": "Quick Organize",
+        "tab": "",
+        "order": 4,
+        "disp": true,
+        "width": "4",
+        "collapse": false
+    },
+    {
+        "id": "070bd6ba9a4a3a46",
+        "type": "ui_group",
+        "name": "View Information ",
+        "tab": "",
+        "order": 3,
+        "disp": true,
+        "width": "12",
+        "collapse": false
+    },
+    {
+        "id": "5c89166ff2a665a3",
+        "type": "ui_group",
+        "name": "Quick update",
+        "tab": "",
+        "order": 5,
+        "disp": true,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "4d32fe36ad0cc7cb",
+        "type": "ui_group",
+        "name": "Status of MySQL",
+        "tab": "",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "fd9c01e4700dead6",
+        "type": "ui_tab",
+        "name": "Graph",
+        "icon": "dashboard",
+        "order": 2,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "fc82055f0df8e4f2",
         "type": "ui_base",
         "theme": {
             "name": "theme-light",
@@ -23,7 +175,7 @@
                 "default": "#0094CE",
                 "baseColor": "#0094CE",
                 "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
-                "edited": false,
+                "edited": true,
                 "reset": false
             },
             "darkTheme": {
@@ -112,195 +264,14 @@
         }
     },
     {
-        "id": "7eed7068ecddb761",
+        "id": "e60d9dbea8a7986f",
         "type": "ui_group",
-        "name": "Default",
-        "tab": "08ce221ee99a19db",
+        "name": "Temp From Probes",
+        "tab": "fd9c01e4700dead6",
         "order": 1,
         "disp": true,
         "width": "6",
         "collapse": false
-    },
-    {
-        "id": "56841c7613eaf1e3",
-        "type": "MySQLdatabase",
-        "name": "",
-        "host": "localhost",
-        "port": "3306",
-        "db": "tempvalues",
-        "tz": "UK",
-        "charset": "UTF8"
-    },
-    {
-        "id": "91e570ff.c625b",
-        "type": "ui_group",
-        "name": "Registration",
-        "tab": "479db76c.8cad78",
-        "order": 1,
-        "disp": true,
-        "width": "6",
-        "collapse": false
-    },
-    {
-        "id": "d30d6219.8ceef",
-        "type": "MySQLdatabase",
-        "name": "",
-        "host": "127.0.0.1",
-        "port": "3306",
-        "db": "training",
-        "tz": "de"
-    },
-    {
-        "id": "9e099cea.b3406",
-        "type": "ui_group",
-        "name": "Login",
-        "tab": "afee5258.a3576",
-        "order": 1,
-        "disp": true,
-        "width": "6",
-        "collapse": false
-    },
-    {
-        "id": "cbdc940b.3c4378",
-        "type": "ui_group",
-        "name": "User database",
-        "tab": "479db76c.8cad78",
-        "order": 2,
-        "disp": true,
-        "width": "15",
-        "collapse": false
-    },
-    {
-        "id": "c2cb81de.e029",
-        "type": "ui_group",
-        "name": "Update password",
-        "tab": "b9f5ab0d.cf64f8",
-        "order": 1,
-        "disp": true,
-        "width": "6",
-        "collapse": false
-    },
-    {
-        "id": "28d6b116.9db92e",
-        "type": "ui_group",
-        "name": "Control",
-        "tab": "b9f5ab0d.cf64f8",
-        "order": 2,
-        "disp": true,
-        "width": "6",
-        "collapse": false
-    },
-    {
-        "id": "afe95a02.48f298",
-        "type": "ui_group",
-        "name": "Parameters",
-        "tab": "b9f5ab0d.cf64f8",
-        "order": 3,
-        "disp": true,
-        "width": "6",
-        "collapse": false
-    },
-    {
-        "id": "fc48c562.accd48",
-        "type": "ui_group",
-        "name": "Display",
-        "tab": "b9f5ab0d.cf64f8",
-        "order": 4,
-        "disp": true,
-        "width": "6",
-        "collapse": false
-    },
-    {
-        "id": "479db76c.8cad78",
-        "type": "ui_tab",
-        "name": "Settings",
-        "icon": "dashboard",
-        "order": 2,
-        "disabled": false,
-        "hidden": false
-    },
-    {
-        "id": "afee5258.a3576",
-        "type": "ui_tab",
-        "name": "Registration",
-        "icon": "dashboard",
-        "order": 1,
-        "disabled": false,
-        "hidden": false
-    },
-    {
-        "id": "b9f5ab0d.cf64f8",
-        "type": "ui_tab",
-        "name": "Operator",
-        "icon": "dashboard",
-        "order": 3,
-        "disabled": false,
-        "hidden": false
-    },
-    {
-        "id": "2eaff49d.f2148c",
-        "type": "mqtt-broker",
-        "name": "",
-        "broker": "192.168.1.7",
-        "port": "1883",
-        "clientid": "Node-RED_Desktop",
-        "usetls": false,
-        "compatmode": false,
-        "protocolVersion": "4",
-        "keepalive": "60",
-        "cleansession": true,
-        "birthTopic": "Desktop",
-        "birthQos": "2",
-        "birthRetain": "true",
-        "birthPayload": "Desktop_Connected",
-        "birthMsg": {},
-        "closeTopic": "Desktop",
-        "closeQos": "2",
-        "closeRetain": "true",
-        "closePayload": "Desktop_Disconnected",
-        "closeMsg": {},
-        "willTopic": "Desktop",
-        "willQos": "2",
-        "willRetain": "true",
-        "willPayload": "Desktop_Connection break",
-        "willMsg": {},
-        "sessionExpiry": ""
-    },
-    {
-        "id": "cb19c538.21d738",
-        "type": "MySQLdatabase",
-        "name": "",
-        "host": "127.0.0.1",
-        "port": "3306",
-        "db": "training",
-        "tz": "de",
-        "charset": "UTF8"
-    },
-    {
-        "id": "d5dbf848.de8068",
-        "type": "ui_tab",
-        "name": "Learn MQTT via Node-RED",
-        "icon": "dashboard",
-        "disabled": false,
-        "hidden": false
-    },
-    {
-        "id": "fc6e5217.dfc3e",
-        "type": "ui_group",
-        "name": "MQTT Client list",
-        "tab": "d5dbf848.de8068",
-        "order": 1,
-        "disp": true,
-        "width": "9",
-        "collapse": false
-    },
-    {
-        "id": "c8f85ef2893010bd",
-        "type": "OpcUa-Endpoint",
-        "endpoint": "opc.tcp://192.168.1.25:4840",
-        "secpol": "None",
-        "secmode": "None",
-        "login": false
     },
     {
         "id": "fa2d79f3f0b5cc40",
@@ -319,10 +290,12 @@
         "securitypolicy": "None",
         "name": "",
         "x": 780,
-        "y": 420,
+        "y": 460,
         "wires": [
             [
-                "5262971ed0e5920d"
+                "5262971ed0e5920d",
+                "f4689f956fc17918",
+                "736c8c4cd5f071d5"
             ]
         ]
     },
@@ -331,14 +304,14 @@
         "type": "function",
         "z": "63a94dd53b6ea35e",
         "name": "",
-        "func": "msg1= {};\n\nmsg1.topic= \"ns=4;i=3;datatype=int16\"\n\n\nreturn msg1;",
+        "func": "var a =global.get ('opcuaconnection')\n\nif (a == true) {\n    \nmsg.topic= \"ns=4;i=3;datatype=int16\"\nreturn msg;\n}",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
         "finalize": "",
         "libs": [],
         "x": 580,
-        "y": 420,
+        "y": 460,
         "wires": [
             [
                 "fa2d79f3f0b5cc40"
@@ -349,6 +322,7 @@
         "id": "951aeac1a7f329cd",
         "type": "inject",
         "z": "63a94dd53b6ea35e",
+        "d": true,
         "name": "",
         "props": [
             {
@@ -366,7 +340,7 @@
         "topic": "",
         "payloadType": "date",
         "x": 390,
-        "y": 400,
+        "y": 580,
         "wires": [
             [
                 "af10a9e1c647fe92",
@@ -386,8 +360,8 @@
         "complete": "false",
         "statusVal": "",
         "statusType": "auto",
-        "x": 1030,
-        "y": 420,
+        "x": 1070,
+        "y": 460,
         "wires": []
     },
     {
@@ -406,10 +380,11 @@
         "securitymode": "None",
         "securitypolicy": "None",
         "name": "",
-        "x": 760,
-        "y": 480,
+        "x": 800,
+        "y": 620,
         "wires": [
             [
+                "6501f456102a9f13",
                 "9a6317353eb5200c"
             ]
         ]
@@ -426,7 +401,7 @@
         "finalize": "",
         "libs": [],
         "x": 580,
-        "y": 480,
+        "y": 660,
         "wires": [
             [
                 "053ef1b53c01d33e"
@@ -445,8 +420,8 @@
         "complete": "false",
         "statusVal": "",
         "statusType": "auto",
-        "x": 970,
-        "y": 480,
+        "x": 1030,
+        "y": 660,
         "wires": []
     },
     {
@@ -456,9 +431,504 @@
         "mydb": "56841c7613eaf1e3",
         "name": "",
         "x": 1090,
-        "y": 600,
+        "y": 800,
         "wires": [
             []
+        ]
+    },
+    {
+        "id": "0114b67383c686b2",
+        "type": "inject",
+        "z": "63a94dd53b6ea35e",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "4",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payloadType": "date",
+        "x": 370,
+        "y": 820,
+        "wires": [
+            [
+                "897f12af488ea439"
+            ]
+        ]
+    },
+    {
+        "id": "f4689f956fc17918",
+        "type": "function",
+        "z": "63a94dd53b6ea35e",
+        "name": "",
+        "func": "global.set('probe_temp1',msg.payload)\n\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1060,
+        "y": 380,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "897f12af488ea439",
+        "type": "function",
+        "z": "63a94dd53b6ea35e",
+        "name": "Write to my SQL",
+        "func": "var a = global.get ('probe_temp1');\nvar c = global.get ('probe_temp2');\n\nvar b = global.get ('opcuaconnection');\nvar now= new Date().toLocaleString(\"GB\");\n\n\nif (b == true){\nmsg.topic  =\"INSERT INTO `tempvalues`.`tempdb`(`timestamp`,`value1`,`value2`) VALUES('\"+now+\"',\"+a+\",\"+c+\");\"\nreturn msg;\n}",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 620,
+        "y": 820,
+        "wires": [
+            [
+                "7b587a95137913ca"
+            ]
+        ]
+    },
+    {
+        "id": "6501f456102a9f13",
+        "type": "function",
+        "z": "63a94dd53b6ea35e",
+        "name": "",
+        "func": "global.set('probe_temp2', msg.payload)",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1040,
+        "y": 560,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "b868789a1d23aefe",
+        "type": "mysql",
+        "z": "63a94dd53b6ea35e",
+        "mydb": "56841c7613eaf1e3",
+        "name": "",
+        "x": 1090,
+        "y": 1020,
+        "wires": [
+            [
+                "9d8c22c90dce2374",
+                "1eb2c001da2c7095"
+            ]
+        ]
+    },
+    {
+        "id": "e8c2d7b5153bdb73",
+        "type": "inject",
+        "z": "63a94dd53b6ea35e",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "1",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payloadType": "date",
+        "x": 370,
+        "y": 1020,
+        "wires": [
+            [
+                "e34680460b4245a1",
+                "eb1bf68dd007d18e"
+            ]
+        ]
+    },
+    {
+        "id": "e34680460b4245a1",
+        "type": "function",
+        "z": "63a94dd53b6ea35e",
+        "name": "Read From my SQL",
+        "func": "msg.topic= \"select * from tempvalues.tempdb\";\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 640,
+        "y": 1020,
+        "wires": [
+            [
+                "b868789a1d23aefe"
+            ]
+        ]
+    },
+    {
+        "id": "9d8c22c90dce2374",
+        "type": "debug",
+        "z": "63a94dd53b6ea35e",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1290,
+        "y": 1020,
+        "wires": []
+    },
+    {
+        "id": "f89eec01708b4b7a",
+        "type": "comment",
+        "z": "63a94dd53b6ea35e",
+        "name": "Read Data from PLC via OPCua",
+        "info": "",
+        "x": 430,
+        "y": 340,
+        "wires": []
+    },
+    {
+        "id": "6a431ad413028e4e",
+        "type": "comment",
+        "z": "63a94dd53b6ea35e",
+        "name": "Write Data to SQL DB",
+        "info": "",
+        "x": 380,
+        "y": 780,
+        "wires": []
+    },
+    {
+        "id": "90f938905218245a",
+        "type": "comment",
+        "z": "63a94dd53b6ea35e",
+        "name": "Read Data from SQL DB",
+        "info": "",
+        "x": 390,
+        "y": 980,
+        "wires": []
+    },
+    {
+        "id": "2805202b55364e49",
+        "type": "ui_switch",
+        "z": "63a94dd53b6ea35e",
+        "name": "",
+        "label": "Data Logging Off/On",
+        "tooltip": "",
+        "group": "78d7d42c237b1be0",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "decouple": "false",
+        "topic": "topic",
+        "topicType": "msg",
+        "style": "",
+        "onvalue": "true",
+        "onvalueType": "bool",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "false",
+        "offvalueType": "bool",
+        "officon": "",
+        "offcolor": "",
+        "animate": false,
+        "x": 260,
+        "y": 60,
+        "wires": [
+            [
+                "429a4e62a3e537a9",
+                "4a98e4997f01b815"
+            ]
+        ]
+    },
+    {
+        "id": "429a4e62a3e537a9",
+        "type": "function",
+        "z": "63a94dd53b6ea35e",
+        "name": "",
+        "func": "global.set ('opcuaconnection',msg.payload)\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 460,
+        "y": 60,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "815e25643dfc66c3",
+        "type": "inject",
+        "z": "63a94dd53b6ea35e",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "true",
+        "payloadType": "bool",
+        "x": 90,
+        "y": 60,
+        "wires": [
+            [
+                "2805202b55364e49"
+            ]
+        ]
+    },
+    {
+        "id": "4a98e4997f01b815",
+        "type": "ui_led",
+        "z": "63a94dd53b6ea35e",
+        "order": 1,
+        "group": "78d7d42c237b1be0",
+        "width": 0,
+        "height": 0,
+        "label": "Connection",
+        "labelPlacement": "left",
+        "labelAlignment": "left",
+        "colorForValue": [
+            {
+                "color": "#ff0000",
+                "value": "false",
+                "valueType": "bool"
+            },
+            {
+                "color": "#008000",
+                "value": "true",
+                "valueType": "bool"
+            }
+        ],
+        "allowColorForValueInMessage": false,
+        "shape": "circle",
+        "showGlow": true,
+        "name": "",
+        "x": 450,
+        "y": 100,
+        "wires": []
+    },
+    {
+        "id": "736c8c4cd5f071d5",
+        "type": "ui_text",
+        "z": "63a94dd53b6ea35e",
+        "group": "78d7d42c237b1be0",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Value From PLC",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "x": 1070,
+        "y": 420,
+        "wires": []
+    },
+    {
+        "id": "e1ef06c1987c415f",
+        "type": "ui_button",
+        "z": "63a94dd53b6ea35e",
+        "name": "",
+        "group": "77b911eb0426b28f",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "Clear Table",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "icon": "",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 360,
+        "y": 880,
+        "wires": [
+            [
+                "32986770906e5191"
+            ]
+        ]
+    },
+    {
+        "id": "32986770906e5191",
+        "type": "function",
+        "z": "63a94dd53b6ea35e",
+        "name": "Clear Table",
+        "func": "\nmsg.topic  =\"Delete from `tempvalues`.`tempdb`\";\n\nreturn msg",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 610,
+        "y": 880,
+        "wires": [
+            [
+                "7b587a95137913ca"
+            ]
+        ]
+    },
+    {
+        "id": "1eb2c001da2c7095",
+        "type": "ui_template",
+        "z": "63a94dd53b6ea35e",
+        "group": "78d7d42c237b1be0",
+        "name": "Table",
+        "order": 4,
+        "width": "6",
+        "height": "5",
+        "format": "<style>\n    #history {\n      font-family: \"Arial\";\n        border-collapse: collapse;\n        width: 100%;\n        }\n        \n        #history td, #history th {\n        border: 1px solid #ddd;\n        padding: 8px;\n        }\n        #history tr:nth-child(even){background-color: #A8EEF8;}\n        \n        #history tr:hover {background-color: #40aeea;}\n        \n        #history th {\n        padding-top: 12px;\n        padding-bottom: 12px;\n        text-align: center;\n        background-color: #696969;\n        color: white;\n        }\n        </style>\n        \n        <table id=\"history\" border=\"1\">\n            <tr align=\"center\">\n                <th>TimeStamp</th>\n                <th>Value1</th>\n                <th>Value2</th>\n                \n                </tr>\n                <tbody>\n                    <tr align=\"center\" ng-repeat=\"row in msg.payload\">\n                        <td ng-repeat=\"item in row\" >{{item}}</td>\n                        </tr>\n                        </tbody>\n                        </table>\n        ",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "x": 1270,
+        "y": 960,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "dbc9159453973d18",
+        "type": "ui_chart",
+        "z": "63a94dd53b6ea35e",
+        "name": "Temperature Values",
+        "group": "e60d9dbea8a7986f",
+        "order": 2,
+        "width": "6",
+        "height": "6",
+        "label": "Temp Value from Database",
+        "chartType": "line",
+        "legend": "true",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "60",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#0a81d6",
+            "#aec7e8",
+            "#ff7f0e",
+            "#1ff91f",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "x": 1320,
+        "y": 1140,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "eb1bf68dd007d18e",
+        "type": "function",
+        "z": "63a94dd53b6ea35e",
+        "name": "Read From my SQL",
+        "func": "\n\nmsg.topic= \"Select `timestamp` as x,`value1`as y,value2 as z from tempvalues.tempdb;\"\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 640,
+        "y": 1080,
+        "wires": [
+            [
+                "bbecbbf4175cbc61"
+            ]
+        ]
+    },
+    {
+        "id": "bbecbbf4175cbc61",
+        "type": "mysql",
+        "z": "63a94dd53b6ea35e",
+        "mydb": "56841c7613eaf1e3",
+        "name": "",
+        "x": 870,
+        "y": 1080,
+        "wires": [
+            [
+                "fb452f60139cc412",
+                "8df610087fd88235"
+            ]
+        ]
+    },
+    {
+        "id": "fb452f60139cc412",
+        "type": "debug",
+        "z": "63a94dd53b6ea35e",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1070,
+        "y": 1080,
+        "wires": []
+    },
+    {
+        "id": "8df610087fd88235",
+        "type": "function",
+        "z": "63a94dd53b6ea35e",
+        "name": "Prepare Chart Data",
+        "func": "\n\n\nvar series = [\"Temperature at Probe 1\",\"Temperature at Probe 2\"];\nvar labels  = [\"A\"];\nvar data = [];\nvar data1 = [];\nvar data2 = [];\n\n\nvar i, len, string;\n\nfor (i=0,len =msg.payload.length, string= \"\";  i<len; i++)\n{\n    data1.push(\n        \n        {\"x\": Date.parse(msg.payload[i].x), \"y\": msg.payload[i].y}\n            );\n            \n}\n\nfor (i=0,len =msg.payload.length, string= \"\";  i<len; i++)\n{\n    data2.push(\n        \n        {\"x\": Date.parse(msg.payload[i].x), \"y\": msg.payload[i].z}\n            );\n            \n}\n\ndata = [data1,data2];\n\nmsg.payload = [{series,data,labels}];\n\nmsg.topic = \"Temp Value\";\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1090,
+        "y": 1140,
+        "wires": [
+            [
+                "dbc9159453973d18"
+            ]
         ]
     }
 ]
